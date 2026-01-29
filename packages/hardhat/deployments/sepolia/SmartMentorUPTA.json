@@ -1,0 +1,271 @@
+{
+  "address": "0x86e0CaaBF647DBAb3cCaA47725de6F0657Be6194",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "estudiante",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "anio",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "trimestre",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "monto",
+          "type": "uint256"
+        }
+      ],
+      "name": "PagoRealizado",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "costoTrimestre",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_nuevoCosto",
+          "type": "uint256"
+        }
+      ],
+      "name": "establecerCosto",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_anio",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "_trimestre",
+          "type": "uint8"
+        }
+      ],
+      "name": "pagarTrimestre",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "name": "registroPagos",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "pagado",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "monto",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fecha",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x5d8ff9fea769a6ef8a6d7376c87dfee9a777f0c5503afc729a0a32f44c670f42",
+  "receipt": {
+    "to": null,
+    "from": "0x426c7d03A66E56CbC7D587dFE9139f09d48C2152",
+    "contractAddress": "0x86e0CaaBF647DBAb3cCaA47725de6F0657Be6194",
+    "transactionIndex": 3,
+    "gasUsed": "335550",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x19e48438437c91f7bbd2f19aa3ffa7311813fe3a544eeccc4cba3c9d9ba7db6d",
+    "transactionHash": "0x5d8ff9fea769a6ef8a6d7376c87dfee9a777f0c5503afc729a0a32f44c670f42",
+    "logs": [],
+    "blockNumber": 10148642,
+    "cumulativeGasUsed": "17096245",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "0cc1b3c75f08cec574f19f23cfa10abc",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"estudiante\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"anio\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"trimestre\",\"type\":\"uint8\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"monto\",\"type\":\"uint256\"}],\"name\":\"PagoRealizado\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"admin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"costoTrimestre\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_nuevoCosto\",\"type\":\"uint256\"}],\"name\":\"establecerCosto\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_anio\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"_trimestre\",\"type\":\"uint8\"}],\"name\":\"pagarTrimestre\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"name\":\"registroPagos\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"pagado\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"monto\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"fecha\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/SmartMentorUPTA.sol\":\"SmartMentorUPTA\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/SmartMentorUPTA.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity ^0.8.19;\\r\\n\\r\\ncontract SmartMentorUPTA {\\r\\n    address public admin;\\r\\n    // FIJAMOS EL COSTO DIRECTAMENTE AQU\\u00cd\\r\\n    uint256 public costoTrimestre = 0.01 ether; \\r\\n\\r\\n    struct Pago {\\r\\n        bool pagado;\\r\\n        uint256 monto;\\r\\n        uint256 fecha;\\r\\n    }\\r\\n\\r\\n    mapping(address => mapping(uint256 => mapping(uint8 => Pago))) public registroPagos;\\r\\n\\r\\n    event PagoRealizado(address indexed estudiante, uint256 anio, uint8 trimestre, uint256 monto);\\r\\n\\r\\n    constructor() {\\r\\n        admin = msg.sender;\\r\\n    }\\r\\n\\r\\n    function pagarTrimestre(uint256 _anio, uint8 _trimestre) public payable {\\r\\n        require(_trimestre >= 1 && _trimestre <= 4, \\\"Trimestre invalido\\\");\\r\\n        require(msg.value >= costoTrimestre, \\\"Monto insuficiente\\\");\\r\\n        require(!registroPagos[msg.sender][_anio][_trimestre].pagado, \\\"Ya esta pagado\\\");\\r\\n\\r\\n        registroPagos[msg.sender][_anio][_trimestre] = Pago({\\r\\n            pagado: true,\\r\\n            monto: msg.value,\\r\\n            fecha: block.timestamp\\r\\n        });\\r\\n\\r\\n        emit PagoRealizado(msg.sender, _anio, _trimestre, msg.value);\\r\\n    }\\r\\n    \\r\\n    // Funci\\u00f3n extra por si quieres cambiar el costo en el futuro desde la dApp\\r\\n    function establecerCosto(uint256 _nuevoCosto) public {\\r\\n        require(msg.sender == admin, \\\"Solo el admin puede cambiar el costo\\\");\\r\\n        costoTrimestre = _nuevoCosto;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0xe70c573e33c9dd238f9c686ac4656beb48ce574abb24171dedbb69efe8c72723\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x6080604052662386f26fc10000600155348015601a57600080fd5b50600080546001600160a01b0319163317905561044c8061003c6000396000f3fe60806040526004361061004a5760003560e01c80630191ec5f1461004f5780635605f7851461007857806374e50fd91461008d578063f851a440146100ad578063feff688b146100e5575b600080fd5b34801561005b57600080fd5b5061006560015481565b6040519081526020015b60405180910390f35b61008b610086366004610387565b610152565b005b34801561009957600080fd5b5061008b6100a83660046103b3565b610306565b3480156100b957600080fd5b506000546100cd906001600160a01b031681565b6040516001600160a01b03909116815260200161006f565b3480156100f157600080fd5b506101356101003660046103cc565b600260208181526000948552604080862082529385528385209052908352912080546001820154919092015460ff9092169183565b60408051931515845260208401929092529082015260600161006f565b60018160ff161015801561016a575060048160ff1611155b6101b05760405162461bcd60e51b81526020600482015260126024820152715472696d657374726520696e76616c69646f60701b60448201526064015b60405180910390fd5b6001543410156101f75760405162461bcd60e51b81526020600482015260126024820152714d6f6e746f20696e737566696369656e746560701b60448201526064016101a7565b336000908152600260209081526040808320858452825280832060ff8086168552925290912054161561025d5760405162461bcd60e51b815260206004820152600e60248201526d596120657374612070616761646f60901b60448201526064016101a7565b604080516060808201835260018083523460208085018281524286880190815233600081815260028086528a82208d835286528a822060ff8d16808452908752918b902099518a5460ff1916901515178a55935196890196909655905196909101959095558551888152908101929092529381019390935290917f53bbe5f5bdf17fa32d2199e7f3ad8aadbd1d3a49c0d5f06d522caf11b3d8a458910160405180910390a25050565b6000546001600160a01b0316331461036c5760405162461bcd60e51b8152602060048201526024808201527f536f6c6f20656c2061646d696e2070756564652063616d6269617220656c20636044820152636f73746f60e01b60648201526084016101a7565b600155565b803560ff8116811461038257600080fd5b919050565b6000806040838503121561039a57600080fd5b823591506103aa60208401610371565b90509250929050565b6000602082840312156103c557600080fd5b5035919050565b6000806000606084860312156103e157600080fd5b83356001600160a01b03811681146103f857600080fd5b92506020840135915061040d60408501610371565b9050925092509256fea26469706673582212207952d9c84b698884b2c43144fbc26eb36857d7d94ba61b021c4c5061db0cbd5864736f6c634300081e0033",
+  "deployedBytecode": "0x60806040526004361061004a5760003560e01c80630191ec5f1461004f5780635605f7851461007857806374e50fd91461008d578063f851a440146100ad578063feff688b146100e5575b600080fd5b34801561005b57600080fd5b5061006560015481565b6040519081526020015b60405180910390f35b61008b610086366004610387565b610152565b005b34801561009957600080fd5b5061008b6100a83660046103b3565b610306565b3480156100b957600080fd5b506000546100cd906001600160a01b031681565b6040516001600160a01b03909116815260200161006f565b3480156100f157600080fd5b506101356101003660046103cc565b600260208181526000948552604080862082529385528385209052908352912080546001820154919092015460ff9092169183565b60408051931515845260208401929092529082015260600161006f565b60018160ff161015801561016a575060048160ff1611155b6101b05760405162461bcd60e51b81526020600482015260126024820152715472696d657374726520696e76616c69646f60701b60448201526064015b60405180910390fd5b6001543410156101f75760405162461bcd60e51b81526020600482015260126024820152714d6f6e746f20696e737566696369656e746560701b60448201526064016101a7565b336000908152600260209081526040808320858452825280832060ff8086168552925290912054161561025d5760405162461bcd60e51b815260206004820152600e60248201526d596120657374612070616761646f60901b60448201526064016101a7565b604080516060808201835260018083523460208085018281524286880190815233600081815260028086528a82208d835286528a822060ff8d16808452908752918b902099518a5460ff1916901515178a55935196890196909655905196909101959095558551888152908101929092529381019390935290917f53bbe5f5bdf17fa32d2199e7f3ad8aadbd1d3a49c0d5f06d522caf11b3d8a458910160405180910390a25050565b6000546001600160a01b0316331461036c5760405162461bcd60e51b8152602060048201526024808201527f536f6c6f20656c2061646d696e2070756564652063616d6269617220656c20636044820152636f73746f60e01b60648201526084016101a7565b600155565b803560ff8116811461038257600080fd5b919050565b6000806040838503121561039a57600080fd5b823591506103aa60208401610371565b90509250929050565b6000602082840312156103c557600080fd5b5035919050565b6000806000606084860312156103e157600080fd5b83356001600160a01b03811681146103f857600080fd5b92506020840135915061040d60408501610371565b9050925092509256fea26469706673582212207952d9c84b698884b2c43144fbc26eb36857d7d94ba61b021c4c5061db0cbd5864736f6c634300081e0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3,
+        "contract": "contracts/SmartMentorUPTA.sol:SmartMentorUPTA",
+        "label": "admin",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 6,
+        "contract": "contracts/SmartMentorUPTA.sol:SmartMentorUPTA",
+        "label": "costoTrimestre",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 22,
+        "contract": "contracts/SmartMentorUPTA.sol:SmartMentorUPTA",
+        "label": "registroPagos",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_mapping(t_uint256,t_mapping(t_uint8,t_struct(Pago)13_storage)))"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_mapping(t_uint256,t_mapping(t_uint8,t_struct(Pago)13_storage)))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(uint256 => mapping(uint8 => struct SmartMentorUPTA.Pago)))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_uint256,t_mapping(t_uint8,t_struct(Pago)13_storage))"
+      },
+      "t_mapping(t_uint256,t_mapping(t_uint8,t_struct(Pago)13_storage))": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => mapping(uint8 => struct SmartMentorUPTA.Pago))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_uint8,t_struct(Pago)13_storage)"
+      },
+      "t_mapping(t_uint8,t_struct(Pago)13_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint8",
+        "label": "mapping(uint8 => struct SmartMentorUPTA.Pago)",
+        "numberOfBytes": "32",
+        "value": "t_struct(Pago)13_storage"
+      },
+      "t_struct(Pago)13_storage": {
+        "encoding": "inplace",
+        "label": "struct SmartMentorUPTA.Pago",
+        "members": [
+          {
+            "astId": 8,
+            "contract": "contracts/SmartMentorUPTA.sol:SmartMentorUPTA",
+            "label": "pagado",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 10,
+            "contract": "contracts/SmartMentorUPTA.sol:SmartMentorUPTA",
+            "label": "monto",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 12,
+            "contract": "contracts/SmartMentorUPTA.sol:SmartMentorUPTA",
+            "label": "fecha",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "96"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      },
+      "t_uint8": {
+        "encoding": "inplace",
+        "label": "uint8",
+        "numberOfBytes": "1"
+      }
+    }
+  }
+}

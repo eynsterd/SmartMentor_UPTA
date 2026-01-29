@@ -1,0 +1,36 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/SmartMentorUPTA.sol": {
+      "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.19;\r\n\r\ncontract SmartMentorUPTA {\r\n    address public admin;\r\n    // FIJAMOS EL COSTO DIRECTAMENTE AQUÍ\r\n    uint256 public costoTrimestre = 0.01 ether; \r\n\r\n    struct Pago {\r\n        bool pagado;\r\n        uint256 monto;\r\n        uint256 fecha;\r\n    }\r\n\r\n    mapping(address => mapping(uint256 => mapping(uint8 => Pago))) public registroPagos;\r\n\r\n    event PagoRealizado(address indexed estudiante, uint256 anio, uint8 trimestre, uint256 monto);\r\n\r\n    constructor() {\r\n        admin = msg.sender;\r\n    }\r\n\r\n    function pagarTrimestre(uint256 _anio, uint8 _trimestre) public payable {\r\n        require(_trimestre >= 1 && _trimestre <= 4, \"Trimestre invalido\");\r\n        require(msg.value >= costoTrimestre, \"Monto insuficiente\");\r\n        require(!registroPagos[msg.sender][_anio][_trimestre].pagado, \"Ya esta pagado\");\r\n\r\n        registroPagos[msg.sender][_anio][_trimestre] = Pago({\r\n            pagado: true,\r\n            monto: msg.value,\r\n            fecha: block.timestamp\r\n        });\r\n\r\n        emit PagoRealizado(msg.sender, _anio, _trimestre, msg.value);\r\n    }\r\n    \r\n    // Función extra por si quieres cambiar el costo en el futuro desde la dApp\r\n    function establecerCosto(uint256 _nuevoCosto) public {\r\n        require(msg.sender == admin, \"Solo el admin puede cambiar el costo\");\r\n        costoTrimestre = _nuevoCosto;\r\n    }\r\n}\r\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evmVersion": "paris",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
