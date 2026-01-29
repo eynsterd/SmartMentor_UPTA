@@ -226,6 +226,65 @@ vweificado..
 
 Pasp 21 cambio a sepolia 
 
+<img width="534" height="311" alt="image" src="https://github.com/user-attachments/assets/ac79e060-34ff-46e6-9a0f-e31059e6abb7" />
+<img width="553" height="311" alt="image" src="https://github.com/user-attachments/assets/525464a2-719b-4973-bbf6-b755ff9916fd" />
+
+
+Paso 22
+recargue faucet
+
+<img width="553" height="311" alt="image" src="https://github.com/user-attachments/assets/fa404b2b-6764-4578-8061-e15171ead0f6" />
+<img width="553" height="311" alt="image" src="https://github.com/user-attachments/assets/8cf94fd8-8c46-4f78-b462-29b595ddcfcb" />
+
+
+
+Paso 23
+cambio de hardhat a sepolia 
+
+hardhat
+<img width="553" height="311" alt="image" src="https://github.com/user-attachments/assets/f4fcb2a6-28a4-40d0-9908-b78625951ad0" />
+
+sepolia
+<img width="553" height="311" alt="image" src="https://github.com/user-attachments/assets/c3c238f2-f0d4-42f4-964b-7b64ffb4ffca" />
+
+
+Paso 24
+ Forzar la actualización del Navegador
+Como modificaste archivos de la carpeta nextjs, el navegador a veces guarda la versión anterior en "caché".
+Presiona Ctrl + F5 (o Cmd + Shift + R en Mac) para recargar la página ignorando la memoria caché.
+Si el servidor de NextJS no se reinició solo, ve a la terminal de la dApp y presiona Ctrl + C y luego arráncala de nuevo con yarn start.
+
+ El Indicador de Red
+Mira la esquina superior derecha o inferior de tu dApp (donde aparece el botón de conectar billetera).
+Si dice "Hardhat" o "Localhost": El cambio en scaffold.config.ts no se ha aplicado o el archivo tiene un error de sintaxis.
+Si dice "Sepolia": ¡Ya estás dentro! Solo asegúrate de que tu MetaMask también esté en la red Sepolia.
+
+ Verificar el balance
+Si ves que el saldo de tu cuenta es 0 ETH y sabes que tienes saldo en Sepolia, es una señal de que la dApp sigue intentando leer tu red local (donde no tienes fondos).
+Asegúrate de que en scaffold.config.ts pusiste onlyLocalBurnerWallet: false. Si está en true, la dApp ignorará tu MetaMask y usará una billetera local vacía.
+
+<img width="553" height="311" alt="image" src="https://github.com/user-attachments/assets/1a63f3be-5726-46d3-aeb0-10370df993ca" />
+
+<img width="553" height="311" alt="image" src="https://github.com/user-attachments/assets/8622c7f5-3f15-4f92-b6ec-a79112fe6ce3" />
+
+<img width="553" height="311" alt="image" src="https://github.com/user-attachments/assets/4d0667f4-17e9-44d5-868e-8aea4b7979df" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
